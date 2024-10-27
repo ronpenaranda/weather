@@ -3,8 +3,8 @@ import { useFetch, request } from '../utils/apihook';
 import WeatherChart from '../components/weatherchart';
 import TableWeather from '../components/table';
 import Card from '../components/card';
-import weatherImg from '../../public/images/sun.png';
-import imageCloud from '../../public/images/cloudy.png'
+import imageSun from '../assets/images/sun.png';
+import imageCloud from '../assets/images/cloudy.png';
 import { transformData, getTodayData } from '../utils/utilities';
 import CustomDropdown from '../components/dropdown';
 
@@ -62,7 +62,7 @@ const handleDropdownChange = (selectedOption) => {
           <div className="md:basis-1/2 p-2">
             <div className='flex justify-center'>
               <img
-                src={slice[0]?.y >= 30 ? weatherImg : imageCloud}
+                src={slice[0]?.y >= 30 ? imageSun : imageCloud}
                 alt="Dynamic Description"
                 className="w-1/2 md:w-auto h-auto" 
               />

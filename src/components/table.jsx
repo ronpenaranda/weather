@@ -1,7 +1,7 @@
 import React from 'react'
 import { roundOff, transformData, getWeeklySummary } from '../utils/utilities'
-import imageSun from '../../public/images/sun.png'
-import imageCloud from '../../public/images/cloudy.png'
+import imageSun from '../assets/images/sun.png';
+import imageCloud from '../assets/images/cloudy.png';
 
 const TableWeather = ({ data }) => {
 

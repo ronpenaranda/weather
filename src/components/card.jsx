@@ -1,8 +1,8 @@
 import React from 'react'
 import { transformData } from '../utils/utilities'
 import { formatTime, getTodayData } from '../utils/utilities'
-import imageSun from '../../public/images/sun.png'
-import imageCloud from '../../public/images/cloudy.png'
+import imageSun from '../assets/images/sun.png';
+import imageCloud from '../assets/images/cloudy.png';
 
 const Card = ({ data }) => {
 
